@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import FunCompo from './components/FunCompo';
+import ClassCompo from './components/ClassCompo';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App />
+    <FunCompo />
+    <ClassCompo /> */}
+
+    <Header />
+    <Main />
+    <Footer />
+    
   </React.StrictMode>
 );
 
