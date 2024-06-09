@@ -1,10 +1,11 @@
 import React from 'react';
+import './Header.css';
 
 class Header extends React.Component {
     render(){
         return(
             <div>
-                <header>
+                <header className='header' style={{color:'blue'}}>
                     <span>Home</span>
                     <span>Shop</span>
                     <span>Contact</span>

@@ -8,6 +8,7 @@ import ClassCompo from './components/ClassCompo';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
+import Product from './components/Props/DemoComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,11 +16,13 @@ root.render(
   <React.StrictMode>
     {/* <App />
     <FunCompo />
-    <ClassCompo /> */}
+    <ClassCompo /> 
 
     <Header />
     <Main />
-    <Footer />
+    <Footer />*/}
+
+    <Product /> 
     
   </React.StrictMode>
 );
