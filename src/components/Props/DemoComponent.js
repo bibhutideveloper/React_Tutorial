@@ -1,3 +1,4 @@
+import React from 'react';
 import ShowLaptop from "./ShowLaptop";
 
 function Product(){
@@ -20,7 +21,7 @@ function Product(){
 
     return (
         <div>
-            <h1>Product details</h1>
+            <h1>Product Details</h1>
             <hr/>
             <ShowTv data={tvData} />
             <ShowMobile data={mobileData} />
@@ -29,7 +30,38 @@ function Product(){
     )
     
 }
-export default Product;
+// export default Product;
+
+class NewMobile extends React.Component{
+    render(){
+        let newMobileData = {
+            name: 'galaxy j7 pro',
+            price: 17000,
+            brand: ' Samsung'
+        }
+
+        return(
+           <div>
+            <ShowNewMobile  data={newMobileData}/>
+           </div> 
+        )
+    }
+}
+// export default NewMobile;
+export {NewMobile, Product};    // multiple exports
+
+class ShowNewMobile extends React.Component{
+    render(){
+        return(
+            <div>
+                <h1>New Mobile Data</h1>
+                <h3>Mobile Name: {this.props.data.name}</h3>
+                <h3>Price: {this.props.data.price}</h3>
+                <h3>Braand: {this.props.data.brand}</h3>
+            </div>
+        )
+    }
+}
 
 function ShowTv(items){
     return (

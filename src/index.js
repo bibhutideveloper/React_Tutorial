@@ -8,8 +8,10 @@ import ClassCompo from './components/ClassCompo';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
-import Product from './components/Props/DemoComponent';
-
+// import Product from './components/Props/DemoComponent';
+// import NewMobile from './components/Props/DemoComponent';
+import { NewMobile, Product } from './components/Props/DemoComponent';
+import ShowMsg from './components/Events/Events';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,9 +22,12 @@ root.render(
 
     <Header />
     <Main />
-    <Footer />*/}
+    <Footer /> */}
 
-    <Product /> 
+    {/* <Product />
+    <NewMobile /> */}
+
+    <ShowMsg />
     
   </React.StrictMode>
 );
