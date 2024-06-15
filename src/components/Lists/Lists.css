@@ -1,0 +1,11 @@
+.fruit{
+    background-color: rgb(168, 224, 224);
+    border-radius: 50px;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}

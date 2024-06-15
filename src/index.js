@@ -5,29 +5,35 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FunCompo from './components/FunCompo';
 import ClassCompo from './components/ClassCompo';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import Footer from './components/Footer/Footer';
 // import Product from './components/Props/DemoComponent';
 // import NewMobile from './components/Props/DemoComponent';
 import { NewMobile, Product } from './components/Props/DemoComponent';
 import ShowMsg from './components/Events/Events';
+import Lists from './components/Lists/Lists';
+import Header from './components/Router/Header/Header';
+import Shop from './components/Router/Shop/Shop';
+import About from './components/Router/About/About';
+import Contact from './components/Router/Contact/Contact';
+import Home from './components/Router/Home/Home';
+import MyRouterApp from './components/Router/MyRouterApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App />
-    <FunCompo />
-    <ClassCompo /> 
-
-    <Header />
-    <Main />
-    <Footer /> */}
+    {/* <App /> */}
+    {/* <FunCompo />
+    <ClassCompo /> */}
 
     {/* <Product />
     <NewMobile /> */}
 
-    <ShowMsg />
+    {/* <ShowMsg /> */}
+
+    {/* <Lists /> */}
+
+
+    {/* Router Tutorials Below [DON'T UNCOMMENT] */}
+    <MyRouterApp />
     
   </React.StrictMode>
 );
